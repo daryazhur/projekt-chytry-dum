@@ -1,9 +1,19 @@
 import './style.css';
 
+import smartHomeData from '../../smartHomeData';
+
+import { Header } from '../../components/Header';
+import { Dashboard } from '../../components/Dashboard';
+
 export const HomePage = () => {
   return (
     <>
-      {/* ↓↓↓ Zde z komponent poskládej svůj chytrý dům ↓↓↓ */}
+      <div className='container'>
+        <Header />    
+        <Dashboard data={smartHomeData}/>    
+
+        
+      </div>
     </>
   );
 };
